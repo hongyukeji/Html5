@@ -11,9 +11,8 @@ require(['jquery'], function($){
 });
 
 require(['jquery', 'system'], function($, system){
-    console.log( system.scrollTry('.fixedTop') );
-    console.log( system.scrollTry('.topRight') );
-    //console.log( system.systemDate() );
+    system.scrollTry('.fixedTop');
+    system.scrollTry('.topRight');
 });
 
 $(function(){
