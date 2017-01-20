@@ -4,9 +4,11 @@ define(['jquery'], function ($){
             var className = $(className);
             $(window).on('scroll', function(){
                 if($(window).scrollTop() > $(window).height()){
-                    className.fadeIn();
+                    className.fadeIn(588);
+                    //className.css("display","block");
                 }else{
-                    className.fadeOut();
+                    className.fadeOut(588);
+                    //className.css("display","none");
                 }
             });
             className.on('click', function(){
