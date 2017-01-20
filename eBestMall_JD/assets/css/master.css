@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/**
+ * 鸿宇通用CSS样式表
+ * Created by PhpStorm.
+ * User: Shadow
+ * Date: 2016-10-18 0018
+ * Time: 18:18
+ * Http: www.hongyuvip.com
+ */
+
+/*所有边距为零*/
+*{margin: 0; padding: 0;}
+
+/*设置body字体大小*/
+body{min-width: 1210px;font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\5b8b体,sans-serif}
+
+/*去掉ul前面的点*/
+ul,li,dl{list-style: none;}
+
+/*去掉下划线*/
+a{text-decoration: none;}
+a:focus{text-decoration: none;}
+a:hover{text-decoration: none;}
+
+/*去掉图片边框*/
+img{border:none;}
+
+/*清除虚框*/
+:focus{outline: none}
+
+/*去掉 输入、选择、文本 input、textArea、select 中黄色边框*/
+input,select,textarea{outline: none;border:none;background: none;}
+
+/*禁止textArea拉伸*/
+textarea{resize: none;}
+
+/*全局自定义公用*/
+.w{width: 1210px;margin: 0 auto;position: relative;}
+.max{width: 100%;height: 100%;}
+.bar{width: auto;height: 10px;clear: both;}
+
+/* 100% 最大宽度和高度*/
+.max{width: 100%;height: 100%;}
+
+/*灰色竖线*/
+.spacer{overflow:hidden;margin:11px 5px 0;width:1px;height:10px;background-color:#ccc}
+
+
+/****************** Change ********************/
+
+/*色调*/
+.clr-r{background-color: red;}
+.clr-b{background-color: blue;}
+.clr-y{background-color: #fd6500;}
+.clr-gn{background-color: green;}
+.clr-f{background-color: #F5F5F5;}
+.clr-gy{background-color: gray;}
+.clr-fff{background: #fff}
+
+/*字体颜色*/
+/*.a-gray{color: #999;}*/
+/*.a-red{color: #f10215;}*/
+/*.a-hover{color: #c81623;}*/
+

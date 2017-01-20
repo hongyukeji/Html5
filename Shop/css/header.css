@@ -1,0 +1,54 @@
+/*topBar*/
+.topBar{height: 30px;background-color: #F7F7F7;line-height: 30px;color: #6C6C6C;}
+.topBar a{color: #6C6C6C}
+.topBar a:hover{color: red}
+.leftArea{float: left;}
+.rightArea{float: right;}
+.rightArea ul li{float: left;}
+.spacer{width:1px;height:12px;background:#DDD;overflow:hidden;margin: 10px 10px 9px 10px;}
+/*logo*/
+.logoBar{height: 100px;}
+.logo{padding-top: 20px;}
+.searchBox{width: 430px;margin-top: 32px;margin-left: 185px;}
+.searchText{width: 346px;height: 31px;padding: 0 5px;background-color: #FFF;line-height: 31px\9;border: 2px solid #41b34d;}
+.searchBtn{width: 70px;height: 35px;font-size: 15px;background-color: #41b34d;color: #FFF;}
+.shopCar{width: 145px;height: 35px;background-color: #41b34d;margin-top: 32px;font-size: 15px;color: #FFF;line-height: 35px;margin-right: 68px}
+.shopText{width: 87px;height: 100%;border-right: #41a000 solid 1px;background: url("../img/icon/shopping_cart.png") 10px center no-repeat;text-indent: 35px;}
+.shopNum{width: 27px;height: 100%;border-left: #FF9C01 solid 1px;background: url("../img/icon/triangle.png") 33px center no-repeat;text-align: right;padding-right: 29px;}
+/*nav*/
+.navBox{height: 35px;background-color: #1369C0;color: #FFF;}
+.shopClass{width: 190px;position: relative;}
+.shopClass h3{line-height: 35px;text-align: center;}
+/*.shopClass i{width: 18px;height: 16px;overflow: hidden;background: url("../img/icon/triangle.png") left center no-repeat;display: inline-block;margin-left: 8px;}*/
+.nav{line-height: 35px;}
+.nav li{float: left;}
+.nav a{height: 35px;display: inline-block;padding: 0 35px;color: #FFF;}
+.nav .active{background-color: #4593fd}
+.shopClassShow{width: 100%;background-color: #4593FD;position: absolute;left: 0;top:35px;z-index: 999;}
+.shopClassItem{padding: 14px 10px;border-bottom: #3487F2 solid 1px;border-top: #5AA1FE solid 1px;}
+.shopClassItem dt{height: 22px;}
+.shopClassItem a{color: #FFF;}
+.shopClassItem a:hover{text-decoration: underline}
+.shopClassItem .b{font-size: 12px;font-weight: bold;}
+.shopClassItem .aLink{padding:2px 3px 4px 4px;background-color: #005aa0;border-radius: 6px;}
+.shopClassList{width: 568px;border: #CCC solid 1px;position: absolute;left: 189px;top: 35px;padding: 5px 20px;z-index: 99;background-color: #FFF}
+.shopClassListItem{padding: 10px 0;border-bottom: #CCC solid 1px}
+.shopClassListItem dt{color: #4B87D9;font-weight: bold;height: 24px;line-height: 24px;}
+.shopClassListItem dd{padding-left: 68px;margin-top: -24px;line-height: 24px;}
+.shopClassListItem dd a{margin-right: 12px;}
+.shopClassListLinks{padding: 15px 0 10px 0;}
+.shopClassListLinks a{color: #FFF;background-color: #2785E6;height: 26px;line-height: 26px;display: inline-block;padding: 0 8px 0 8px}
+.shopClassActive{background-color: #FFF; border-left: #4593FD solid 1px;}
+.shopClassActive dt{background:none;}
+.shopClassActive a{color: #000;}
+.shopClassActive .aLink{color: #FFF;}
+/*banner*/
+.bannerBar{width: 750px;height: 410px;position: relative;overflow: hidden;z-index: 9;margin: 10px 0 0 200px;}
+.imgBox{width: 2040px;height: 420px;position: absolute;left: 0;top: 0;}
+.imgBox li{float: left;}
+.imgBox img{width: 1020px;height: 420px;display: block}
+.imgNum{position: absolute;left: 0;bottom: 15px;width: 100%;text-align: center;}
+.imgNum a{width: 20px;height: 5px;overflow: hidden;background-color: #FFF;display: inline-block;margin: 0 3px;}
+.imgNum .active{background-color: #FF7700;}
+
+.bannerBarright{width: 250px;background-color: red;height: 410px;margin: 10px 0 0 10px;}

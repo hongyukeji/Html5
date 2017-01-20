@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/**
+ * 首页CSS样式表
+ * Created by PhpStorm.
+ * User: Shadow
+ * Date: 2016-05-18 0018
+ * Time: 18:18
+ * Http: www.hongyuvip.com
+ */
+
+.focus{
+    width: 100%;
+    height: 456px;
+}
+
+.focus-wrap{
+    height: 100%;
+}
+
+.focusLeft{
+    width: 210px;
+    height: 100%;
+}
+
+.focusAd{
+    width: 730px;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.focusRight{
+    width: 250px;
+    height: 100%;
+}
+
+/* 轮播图 star */
+
+.slider{}
+
+/* 轮播图 end */
+
+.news{
+    width: 248px;
+    height: 162px;
+    border: 1px solid #E4E4E4;
+}
+
+.lifeServ{
+    width: 248px;
+    height: 210px;
+    border-left: 1px solid #E4E4E4;;
+    border-right: 1px solid #E4E4E4;;
+    border-bottom: 1px solid #E4E4E4;;
+}
+
+.right-pic{
+    width: 250px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.todaysBar{
+    width: 100%;
+    height: 164px;
+
+}
+
+.todays-wrap{height: 100%;}
+
+.todaysLeft{
+    width: 210px;
+    height: 100%;
+}
+
+.todaysRight{
+    width: 1000px;
+    height: 100%;
+}
+
+.guessYouBar{
+    width: 100%;
+    height: 269px;
+}
+
+.guessYouWrap{
+}
+
+.guessYouTitle{
+    width: 100%;
+}
+
+.guessYouTitle h2{
+    font: bold 20px/30px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\5b8b体,sans-serif;
+    color: #666;
+    display:inline;
+    padding-right: 228px;
+    background: url(//misc.360buyimg.com/product/home/1.0.0/css/i/homebg.png) 85px -91px;
+}
+
+.guessYouTitle a{
+    padding-right: 25px;
+    height: 18px;
+    margin-top: 30px;
+    background: url(//misc.360buyimg.com/product/home/1.0.0/css/i/homebg.png) -310px -5px no-repeat;
+    color: #666;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+}
+
+.guessYouTitle a:hover{
+    color: #C81818;
+    background-position:-310px -29px;
+}
+
+.guessYou{
+    width: 100%;
+    height: 230px;
+    border: 1px solid #E4E4E4;
+}
+

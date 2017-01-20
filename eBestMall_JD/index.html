@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>eBestMall - B2B2C商城系统</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/master.css">
+</head>
+<body>
+<style type="text/css">
+    /*header css start*/
+    .header{}
+    .topBanner{background-color: #f02c24;}
+    .topBanner a{width: 100%;height: 80px;display: block;overflow:hidden;background: url(assets/images/topBanner.jpg) no-repeat 50% 0}
+    .topBanner i{cursor:pointer; position: absolute; right: 5px; top: 5px; font-weight: 400; font-size: 14px; color: #FFF; background: rgb(45,45,45); opacity: .3; filter: alpha(opacity=30); width: 20px; text-align: center; line-height: 20px;font-style:normal;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale;}
+    .mainNav{width: 100%;height: 30px;border-bottom:1px solid #ddd;background-color:#F5F5F5;line-height: 30px;}
+    .mainNav ul li{float: left;}
+    .mainNav a{line-height: 30px;padding: 0 7px;color: #999;}
+    .mainNav .a-red{color: #f10215;}
+    .mainNav ul li a:hover{color: #c81623;}
+    .mainNav .myCity{margin-left: 200px;}
+    .headerBar{}
+    .headerWrap{height: 140px;}
+    .logo{width: 190px;height: 170px;position:absolute;z-index:2;left:0;top:-30px;-moz-box-shadow:0 -12px 10px rgba(0,0,0,.2);box-shadow:0 -12px 10px rgba(0,0,0,.2);background-color:#fff}
+    .logo .logo_tit{position:absolute;width:100%;height:100%;margin-top: 0;}
+    .logo .logo_tit_lk{overflow:hidden;display:block;width:190px;height:170px;background-image:url(assets/images/logo.v1.png);background-repeat:no-repeat;text-indent:-999px}
+    .logo .logo_subtit{display: none;}
+    .search{position:relative;z-index:1;height:60px}
+    .search .form{position:absolute;left:320px;top:25px;width:550px;height:35px}
+    .search .text{float: left;left:0;padding:4px;width:500px;height:35px;border:2px solid #f10215;line-height:25px;font-size:14px;color:rgb(51, 51, 51);}
+    .search .button{right:0;width:50px;height:35px;line-height:35px;border:none;background-color:#f10215;font-size:14px;font-weight:700;color:#fff}
+    .hotwords{overflow: hidden;position: absolute;left: 320px;top: 65px;width: 550px;height: 20px;line-height: 20px;}
+    .hotwords a{float: left;margin-right: 10px;white-space: nowrap;color: #999;}
+    .hotwords a:hover{color: #c81623}
+    .hotwords .a-red{color: #f10215}
+    .myCart{position: absolute;right: 0;top: 25px}
+    .myCart .cw-icon{width: 188px;height: 35px;text-align: center;background-color: #fff;line-height: 35px;}
+    .cw-icon{overflow: hidden;position: relative;z-index: 1;float: left;border: 1px solid #e3e4e5;}
+    .myCart .cw-icon a{color: #f10214  }
+    .myCart .ci-count{position: absolute;top: 5px;left: 130px;right: auto;zoom: 1;padding: 1px;font-size: 12px;line-height: 12px;color: #fff;background-color: #f10215;-moz-border-radius: 7px;border-radius: 7px;min-width: 12px;text-align: center;}
+    .myCart .icon-font{position: absolute;top: 7px;left: 35px;width: 18px;  height: 16px;display: block;overflow: hidden;background: url(//misc.360buyimg.com/jdf/1.0.0/unit/globalImages/1.0.0/jd2015img.png) 0 -56px no-repeat;}
+    .nav{width: 1010px;height: 40px;overflow: hidden;position: absolute;left: 200px;bottom: 0;}
+    .nav .spacer, .nav li, .nav ul{float: left;}
+    .nav li{margin-left: 30px;}
+    .nav a{position: relative;display: block;height: 40px;line-height: 40px;font-size: 16px;font-weight: 700;color: #666;}
+    .nav a:hover{color: #c81623  }
+    .nav .spacer{overflow: hidden;margin-top: 15px;margin-left: 20px;margin-right: -10px;width: 1px;height: 10px;background-color: #ccc;}
+    /*header css end*/
+
+    /*content css start*/
+    .content{width: 100%;height: 600px;background-color: #F5F5F5}
+    /*content css end*/
+</style>
+<div class="header">
+    <div class="topBanner container-fluid ">
+        <div class="w">
+            <a href="#"></a>
+            <i>X</i>
+        </div>
+    </div>
+
+    <div class="mainNav">
+        <div class="w">
+            <ul class="pull-left hidden">
+                <li class="myCity"><a href="#">北京</a> </li>
+            </ul>
+
+            <ul class="pull-right">
+                <li>
+                    <a href="#">你好，请登录</a>
+                    <a class="a-red" href="#">免费注册</a>
+                </li>
+                <li class="spacer"></li>
+                <li><a href="#">我的订单</a> </li>
+                <li class="spacer"></li>
+                <li><a href="#">购物车</a> </li>
+                <li class="spacer"></li>
+                <li><a href="#">个人中心</a> </li>
+                <li class="spacer"></li>
+                <li><a href="#">卖家中心</a> </li>
+                <li class="spacer"></li>
+                <li><a href="#">联系客服</a> </li>
+                <li class="spacer"></li>
+                <li><a href="#">网站导航</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="headerBar container-fluid">
+        <div class="headerWrap w">
+            <div class="logo">
+                <h1 class="logo_tit"><a href="#" class="logo_tit_lk">eBestMall</a></h1>
+                <h2 class="logo_subtit">eBestMall - B2B2C商城系统 快速 安全 专业</h2>
+            </div>
+            <div class="search">
+                <div class="form">
+                    <input class="text" type="text" autocomplete="off" placeholder="11.11开抢啦！" >
+                    <button class="button">搜 索</button>
+                </div>
+            </div>
+
+            <div class="myCart">
+                <div class="cw-icon">
+                    <i class="icon-font"></i>
+                    <i class="ci-count">0</i>
+                    <a href="#">我的购物车</a>
+                </div>
+            </div>
+
+            <div class="hotwords">
+                <a class="a-red" href="#">满888减288</a>
+                <a href="#">低至5折</a>
+                <a href="#">羽绒服男</a>
+                <a href="#">一元包邮</a>
+                <a href="#">电暖气</a>
+                <a href="#">羽绒服男</a>
+            </div>
+
+            <div class="nav">
+                    <ul class="subNav1">
+                        <li><a target="_blank" href="#">秒杀</a></li>
+                        <li><a target="_blank" href="#">优惠券</a></li>
+                        <li><a target="_blank" href="#">闪购</a></li>
+                        <li><a target="_blank" href="#">拍卖</a></li>
+                    </ul>
+                    <div class="spacer"></div>
+                    <ul class="subNav2">
+                        <li><a target="_blank" href="#">服装城</a></li>
+                        <li><a target="_blank" href="#">京东超市</a></li>
+                        <li><a target="_blank" href="#">生鲜</a></li>
+                        <li><a target="_blank" href="#">全球购</a></li>
+                    </ul>
+                    <div class="spacer"></div>
+                    <ul class="subNav3">
+                        <li><a target="_blank" href="#">京东金融</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content container-fluid"></div>
+
+<div class="footer">
+    <div class="friendLink"></div>
+    <div class="partner"></div>
+    <div class="copyRight"></div>
+</div>
+</body>
+</html>
