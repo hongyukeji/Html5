@@ -16,4 +16,12 @@ require(['jquery', 'system'], function($, system){
     system.scrollTry('.topRight');
 });
 
-$(function(){});
+$(function(){
+    var closeAd = $('.closeAd');
+
+    closeAd.on('click', function(){
+        $(this).parent().parent().addClass("hidden");
+        //$(this).parent().parent().removeClass("hidden");
+        //$(this).parent().parent().css("display","none");
+    });
+});
