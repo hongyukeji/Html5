@@ -10,6 +10,7 @@ require(['jquery'], function($){
     //$('body').css('background-color', 'red');
 });
 
+/* 全局函数 */
 require(['jquery', 'system'], function($, system){
     system.scrollTry('.fixedTop');
     system.scrollTry('.topRight');
