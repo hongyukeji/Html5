@@ -15,22 +15,4 @@ require(['jquery', 'system'], function($, system){
     system.scrollTry('.topRight');
 });
 
-$(function(){
-    //var fixedTop = $('.fixedTop'),
-    //    topRight = $('.topRight');
-
-    //$(window).trigger('scroll');
-    //$(window).on('scroll', function(){
-    //    if($(window).scrollTop() > $(window).height()){
-    //        fixedTop.fadeIn();
-    //        topRight.fadeIn();
-    //    }else{
-    //        fixedTop.fadeOut();
-    //        topRight.fadeOut();
-    //    }
-    //});
-
-    //topRight.on('click', function(){
-    //    $('html,body').animate({scrollTop: 0},588);
-    //});
-});
+$(function(){});
