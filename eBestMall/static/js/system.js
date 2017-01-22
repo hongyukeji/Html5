@@ -1,13 +1,13 @@
 define(['jquery'], function ($){
     return {
         scrollTry: function (className){
-            var className = $(className);
+            var scrollName = $(className);
             $(window).on('scroll', function(){
                 if($(window).scrollTop() > $(window).height()){
-                    className.fadeIn(); //  scroll-linked 定位 BUG - 待解决 Shadow
+                    scrollName.fadeIn(); //  scroll-linked 定位 BUG - 待解决 Shadow
                     //className.css("display","block");
                 }else{
-                    className.fadeOut();    // scroll-linked 定位 BUG - 待解决 Shadow
+                    scrollName.fadeOut();    // scroll-linked 定位 BUG - 待解决 Shadow
                     //className.css("display","none");
                 }
             });
@@ -16,8 +16,8 @@ define(['jquery'], function ($){
 
         //Top返回顶部
         scrollTop: function (className){
-            var className = $(className);
-            className.on('click', function(){
+            var btnTop = $(className);
+            btnTop.on('click', function(){
                 $('html,body').animate({scrollTop: 0},588);
             });
         },
