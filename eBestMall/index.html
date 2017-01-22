@@ -227,20 +227,7 @@
 <script src="static/js/require.js" data-main="static/js/main"></script>
 <script type="text/javascript">
     $(function(){
-        var btnMenu = $('.btnMenu');
-        var contentMenu = $('.fixedRight');
-        var altMenu = $('.altMenu');
-        btnMenu.click(function(){
-            if(contentMenu.css("right") === "270px"){
-                contentMenu.css("right","0");
-                altMenu.css("right","-270px");
-                console.log(altMenu.css("right"));
-            }else{
-                contentMenu.css("right","270px");
-                altMenu.css("right","0");
 
-            }
-        });
     });
 </script>
 </body>

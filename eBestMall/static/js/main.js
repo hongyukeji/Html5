@@ -17,12 +17,28 @@ require(['jquery', 'system'], function($, system){
 });
 
 $(function(){
-    var closeAd = $('.closeAd');
 
+    //首页广告关闭按钮事件
+    var closeAd = $('.closeAd');
     closeAd.on('click', function(){
         $(this).parent().parent().fadeOut(588);
         //$(this).parent().parent().addClass("hidden");
         //$(this).parent().parent().removeClass("hidden");
         //$(this).parent().parent().css("display","none");
     });
+
+    //首页侧边工具栏按钮事件
+    var btnMenu = $('.btnMenu');
+    var contentMenu = $('.fixedRight');
+    var altMenu = $('.altMenu');
+    btnMenu.click(function(){
+        if(contentMenu.css("right") === "270px"){
+            contentMenu.css("right","0");
+            altMenu.css("right","-270px");
+        }else{
+            contentMenu.css("right","270px");
+            altMenu.css("right","0");
+        }
+    });
+
 });
