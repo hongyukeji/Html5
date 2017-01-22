@@ -147,9 +147,11 @@ ul,ol,li {
 .headerTop {
     width: 100%;
     height: 32px;
-    line-height: 32px;
     background-color: #F5F5F5;
     border-bottom: 1px solid #EEEEEE;
+}
+.headerTop > div {
+    height: 32px;
 }
 .headerTop a {
     color: var(--font-color);
@@ -158,9 +160,13 @@ ul,ol,li {
     color: var(--main-color);
 }
 .headerTop > div > ul {
+    height: 100%;
     position: relative;
-    height: 32px;
     margin-bottom: 0;
+}
+.headerTop > div > ul > li {
+    height: 100%;
+    line-height: 32px;
 }
 .headerTop > div > ul > li > span {
     color: var(--font-color);
@@ -272,18 +278,22 @@ ul,ol,li {
     min-height: 168px;
     right: -1px;
     background-color: #FFFFFF;
-    /*display: block !important;*/
+    display: block !important;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
 }
 .siteTop > dl {
-    width: 297px;
+    width: 256px;
     min-height: 128px;
     float: left;
     padding-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
     border-left: 1px solid #EEEEEE;
 }
 .siteTop > dl:first-child {
-    border-left: none;
+    border-color: #FFFFFF;
 }
 .siteTop > dl > dt {
     font-size: 12px;
@@ -291,9 +301,14 @@ ul,ol,li {
     color: var(--font-color);
     margin-bottom: 10px;
 }
+.siteTop > dl > dd {
+    margin-left: 0;
+}
 .siteTop > dl > dd > div {
     width: 7em;
-    margin-right: 8px;
+    /*width: 6em;*/
+    /*width: calc(256px / 3);*/
+    margin-right: calc((256px / 3) - 7em);
     height: 24px;
     line-height: 24px;
     float: left;
