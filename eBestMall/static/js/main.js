@@ -32,12 +32,22 @@ $(function(){
     var contentMenu = $('.fixedRight');
     var altMenu = $('.altMenu');
     btnMenu.click(function(){
-        if(contentMenu.css("right") === "270px"){
-            contentMenu.css("right","0");
-            altMenu.css("right","-270px");
-        }else{
+        btnMenu.css("background-color","");
+        $(this).css("background-color","#C40000");
+        if(contentMenu.css("right") !== "270px"){
             contentMenu.css("right","270px");
-            altMenu.css("right","0");
+            $(this).next(altMenu).css("right","0");
+        }else{
+            var rightValue = $(this).next(altMenu).css("right");
+            if(rightValue == "-270px"){
+                altMenu.css("right","-270px");
+                $(this).next(altMenu).css("right","0");
+            }
+            if(rightValue == "0px"){
+                contentMenu.css("right","0");
+                $(this).next(altMenu).css("right","-270px");
+                $(this).css("background-color","");
+            }
         }
     });
 

@@ -576,35 +576,42 @@ ul,ol,li {
     font-size: 16px;
     color: #FFFFFF;
 }
-.btnMenu + .cartMenu{
-    position: relative;
-    height: 100px;
-}
-.btnMenu + .cartMenu > a{
-    z-index: 2;
-}
-.btnMenu + .cartMenu > a > div {
-    width: 1em;
-    height: 71px;
-    line-height: 17px;
-    margin-left: calc((35px - 12px) / 2);
-    color: #FFFFFF;
-}
-.btnMenu + .cartMenu > a > span {
-    position: absolute;
-    top: 0;
-    left: 5px;
-    right: 5px;
-    bottom: 0;
-    width: 25px;
-    height: 100%;
+.cartMenu{
+    /*position: relative;*/
+    /*min-height: 100px;*/
+    height: 127px;
     border-top: 1px solid #444444;
     border-bottom: 1px solid #444444;
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
+    /*box-sizing:border-box;*/
+    /*-moz-box-sizing:border-box;*/
+    /*-webkit-box-sizing:border-box;*/
 }
-.btnMenu + .cartMenu:hover span {
+.cartMenu > a > i {
+    float: left;
+    margin-top: 15px;
+    margin-left: calc(50% - 8px);
+}
+.cartMenu > a > div {
+    float: left;
+    width: 1em;
+    height: 56px;
+    line-height: 17px;
+    margin-top: 5px;
+    margin-left: 12px;
+    color: #FFFFFF;
+}
+.cartMenu > a > span {
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #FFFFFF;
+    margin-left: calc(50% - 10px);
+    background-color: #C81623;
+    border-radius: 10px;
+}
+.cartMenu:hover {
     border-color: #C40000;
 }
 .btnMenu:hover .altRight {
@@ -624,11 +631,6 @@ ul,ol,li {
     right: -270px;
     bottom: 0;
     background-color: #FFFFFF;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
 
