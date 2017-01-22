@@ -278,19 +278,20 @@ ul,ol,li {
     min-height: 168px;
     right: -1px;
     background-color: #FFFFFF;
-    display: block !important;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
+    /*display: block !important;*/
 }
 .siteTop > dl {
     width: 256px;
-    min-height: 128px;
+    /*min-height: 128px;*/
     float: left;
     padding-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
     border-left: 1px solid #EEEEEE;
+    box-sizing: content-box;
 }
 .siteTop > dl:first-child {
     border-color: #FFFFFF;
