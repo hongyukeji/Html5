@@ -20,7 +20,8 @@ $(function(){
     var closeAd = $('.closeAd');
 
     closeAd.on('click', function(){
-        $(this).parent().parent().addClass("hidden");
+        $(this).parent().parent().fadeOut(588);
+        //$(this).parent().parent().addClass("hidden");
         //$(this).parent().parent().removeClass("hidden");
         //$(this).parent().parent().css("display","none");
     });
