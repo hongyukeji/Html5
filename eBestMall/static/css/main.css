@@ -88,8 +88,8 @@ ul,ol,li {
 .cb {clear: both;}
 
 /*隐藏/显示*/
-.hide {display: none;}
-.show {display: block;}
+.hide {display: none !important;}
+.show {display: block !important;}
 
 /*背景色*/
 .bg-gray {background-color: #F5F5F5;}
@@ -461,6 +461,11 @@ ul,ol,li {
     z-index: 7;
     display: block;
     background-color: #000000;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .sideBar {
     width: 100%;
