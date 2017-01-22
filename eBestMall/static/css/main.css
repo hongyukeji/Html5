@@ -279,19 +279,21 @@ ul,ol,li {
     right: -1px;
     background-color: #FFFFFF;
     box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
-    -webkit-box-sizing:border-box; /* Safari */
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
     /*display: block !important;*/
 }
 .siteTop > dl {
     width: 256px;
-    /*min-height: 128px;*/
+    min-height: 128px;
     float: left;
     padding-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
     border-left: 1px solid #EEEEEE;
     box-sizing: content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
 }
 .siteTop > dl:first-child {
     border-color: #FFFFFF;
