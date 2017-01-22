@@ -4,11 +4,11 @@ define(['jquery'], function ($){
             var className = $(className);
             $(window).on('scroll', function(){
                 if($(window).scrollTop() > $(window).height()){
-                    //className.fadeIn();
-                    className.css("display","block");
+                    className.fadeIn(); //  scroll-linked 定位 BUG - 待解决 Shadow
+                    //className.css("display","block");
                 }else{
-                    //className.fadeOut();
-                    className.css("display","none");
+                    className.fadeOut();    // scroll-linked 定位 BUG - 待解决 Shadow
+                    //className.css("display","none");
                 }
             });
             className.on('click', function(){
