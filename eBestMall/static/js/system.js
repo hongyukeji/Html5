@@ -11,7 +11,6 @@ define(['jquery'], function ($){
                     //className.css("display","none");
                 }
             });
-
         },
 
         //Top返回顶部
@@ -32,6 +31,5 @@ define(['jquery'], function ($){
                 //$(this).parent().parent().css("display","none");
             });
         }
-
     }
 });

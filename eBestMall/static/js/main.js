@@ -17,9 +17,7 @@ require(['jquery', 'system'], function($, system){
     system.scrollTop('.topRight');
     system.closeAd('.closeAd');
 
-
     $(function(){
-
         //首页侧边工具栏事件
         var btnMenu = $('.btnMenu');
         var contentMenu = $('.fixedRight');
@@ -60,7 +58,6 @@ require(['jquery', 'system'], function($, system){
             btnMenu.next(altMenu).css("right","-270px");
             btnMenu.css({"background-color":""});
         }
-
     });
 });
 
