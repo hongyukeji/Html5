@@ -87,13 +87,16 @@ ul,ol,li {
 .fr {float: right;}
 .cb {clear: both;}
 
+/*隐藏/显示*/
+.hide {display: none;}
+.show {display: block;}
+
 /*背景色*/
 .bg-gray {background-color: #F5F5F5;}
 
 /*-------------------- Header --------------------*/
 .header {
     position: relative;
-    /*margin-top: 100px;*/
 }
 
 /* 顶部广告 */
@@ -101,7 +104,7 @@ ul,ol,li {
     width: 100%;
     position: relative;
     z-index: 3;
-    /*display: none;*/
+    display: block;
     background-color: #E63F37;
 }
 .headerAd > div{
@@ -215,11 +218,6 @@ ul,ol,li {
     -webkit-transform:rotate(-180deg); /* Safari 和 Chrome */
     -o-transform:rotate(-180deg); 	/* Opera */
     transform:rotate(-180deg);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
 .downTop i {
@@ -238,14 +236,11 @@ ul,ol,li {
     position: absolute;
     top: 31px;
     padding: 7px;
-    z-index: 2;
+    z-index: 3;
     display: none;
     background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-top: none;
-    box-sizing:inherit;
-    -moz-box-sizing:inherit;
-    -webkit-box-sizing:inherit;
 }
 .userTop {
     left: -1px;
@@ -294,9 +289,6 @@ ul,ol,li {
     margin-right: 20px;
     margin-bottom: 0;
     border-left: 1px solid #EEEEEE;
-    box-sizing: content-box;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
 }
 .siteTop > dl:first-child {
     border-color: #FFFFFF;
@@ -312,8 +304,6 @@ ul,ol,li {
 }
 .siteTop > dl > dd > div {
     width: 7em;
-    /*width: 6em;*/
-    /*width: calc(256px / 3);*/
     margin-right: calc((256px / 3) - 7em);
     height: 24px;
     line-height: 24px;
@@ -322,7 +312,7 @@ ul,ol,li {
     white-space: nowrap;
 }
 
-    /* 地址定位 */
+/* 地址定位 */
 .headerRegion {
     /*box-sizing:border-box;*/
     /*-moz-box-sizing:border-box; *//* Firefox */
@@ -451,7 +441,7 @@ ul,ol,li {
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 2;
     display: block;
 }
 .fixedBottom > div {
