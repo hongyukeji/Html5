@@ -11,13 +11,27 @@ define(['jquery'], function ($){
                     //className.css("display","none");
                 }
             });
+
+        },
+
+        //Top返回顶部
+        scrollTop: function (className){
+            var className = $(className);
             className.on('click', function(){
                 $('html,body').animate({scrollTop: 0},588);
             });
         },
-        systemDate: function (){
-            var oDate = new Date();
-            return oDate.getFullYear();
+
+        //关闭首页广告
+        closeAd: function (className){
+            var closeAd = $(className);
+            closeAd.on('click', function(){
+                $(this).parent().parent().fadeOut(588);
+                //$(this).parent().parent().addClass("hidden");
+                //$(this).parent().parent().removeClass("hidden");
+                //$(this).parent().parent().css("display","none");
+            });
         }
+
     }
 });

@@ -577,14 +577,9 @@ ul,ol,li {
     color: #FFFFFF;
 }
 .cartMenu{
-    /*position: relative;*/
-    /*min-height: 100px;*/
     height: 127px;
     border-top: 1px solid #444444;
     border-bottom: 1px solid #444444;
-    /*box-sizing:border-box;*/
-    /*-moz-box-sizing:border-box;*/
-    /*-webkit-box-sizing:border-box;*/
 }
 .cartMenu > a > i {
     float: left;
@@ -610,9 +605,6 @@ ul,ol,li {
     margin-left: calc(50% - 10px);
     background-color: #C81623;
     border-radius: 10px;
-}
-.cartMenu:hover {
-    border-color: #C40000;
 }
 .btnMenu:hover .altRight {
     visibility:visible;
