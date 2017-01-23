@@ -49,9 +49,7 @@ require(['jquery', 'system'], function($, system){
                     altMenu.css({"right":"-270px"});
                     $(this).next(altMenu).css({"right":"0"});
                 }
-                if(rightValue == "0px"){
-                    sideOut();
-                }
+                if(rightValue == "0px"){sideOut();}
             }
         });
 
