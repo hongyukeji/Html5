@@ -18,11 +18,13 @@
  */
 :root{
     /*网站主色调*/
-    --main-color:#F10215;
+    --main-color: #F10215;
     
     /*字体颜色*/
-    --font-color:#6C6C6C;
+    --font-color: #6C6C6C;
 
+    /*背景色*/
+    --bg-color: #F5F5F5;
 
 }
 
@@ -99,14 +101,15 @@ ul,ol,li {
 /* 顶部广告 */
 .headerAd {
     width: 100%;
-    position: relative;
-    z-index: 3;
+    height: 80px;
+    z-index: 1;
     display: block;
+    position: relative;
     background-color: #E63F37;
 }
 .headerAd > div{
     position: relative;
-    height: 80px;
+    height: 100%;
 }
 .headerAd > div > a > img {
     width: 100%;
@@ -155,10 +158,10 @@ ul,ol,li {
     height: 32px;
 }
 .headerTop a {
-    color: var(--font-color);
+    color: #6C6C6C;
 }
 .headerTop a:hover {
-    color: var(--main-color);
+    color: #F10215;
 }
 .headerTop > div > ul {
     height: 100%;
@@ -170,13 +173,13 @@ ul,ol,li {
     line-height: 32px;
 }
 .headerTop > div > ul > li > span {
-    color: var(--font-color);
+    color: #6C6C6C;
 }
 
 /* 页眉右侧菜单 */
 .menuTop {}
 .menuTop .active {
-    color: var(--main-color);
+    color: #F10215;
 }
 .menuTop > li {
     float: left;
@@ -220,11 +223,11 @@ ul,ol,li {
 
 .downTop i {
     /*vertical-align: -3%;*/
-    color: var(--font-color);
+    color: #6C6C6C;
     margin-left: 3px;
 }
 .downTop span{
-    color: var(--font-color);
+    color: #6C6C6C;
 }
 .downTop:hover .listTop {
     display: block;
@@ -254,7 +257,7 @@ ul,ol,li {
     white-space:nowrap;
 }
 .listTop > div > a:hover {
-    color: var(--font-color);
+    color: #6C6C6C;
 }
 .userTop a{
     padding-left: 5px;
@@ -294,7 +297,7 @@ ul,ol,li {
 .siteTop > dl > dt {
     font-size: 12px;
     font-weight: 700;
-    color: var(--font-color);
+    color: #6C6C6C;
     margin-bottom: 10px;
 }
 .siteTop > dl > dd {
@@ -333,7 +336,7 @@ ul,ol,li {
 .headerRegion > i{
     vertical-align: -10%;
     font-size: 14px;
-    color: var(--main-color);
+    color: #F10215;
     margin-right: 3px;
 }
 .listRegion {
@@ -360,14 +363,14 @@ ul,ol,li {
 }
 .listRegion >div > a {
     padding: 4px 8px;
-    color: var(--font-color);
+    color: #6C6C6C;
 }
 .listRegion >div > a:hover {
-    color: var(--main-color);
+    color: #F10215;
     background-color: #F5F5F5;
 }
 .listRegion >div > .active {
-    background-color: var(--main-color) !important;
+    background-color: #F10215 !important;
     color: #FFFFFF !important;
 }
 
@@ -386,6 +389,7 @@ ul,ol,li {
     bottom: 0;
     width: 180px;
     height: 165px;
+    overflow: hidden;
     background-color: #FFFFFF;
     box-shadow: 0 -12px 10px rgba(0,0,0,.2);
 }
@@ -397,10 +401,10 @@ ul,ol,li {
     height: 100%;
 }
 .headerMain .logo > h1 > a {
-    overflow: hidden;
-    display: block;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    display: block;
     text-indent: -999px;
 }
 .headerMain .logo > h1 > a > img {
