@@ -22,6 +22,7 @@ require(['jquery', 'system'], function($, system){
         var btnMenu = $('.btnMenu');
         var contentMenu = $('.fixedRight');
         var altMenu = $('.altMenu');
+        var backdropAlt = $('.backdropAlt');
 
         //页面鼠标点击事件
         $(document).click(function whichButton(event)
@@ -43,13 +44,14 @@ require(['jquery', 'system'], function($, system){
             btnMenu.css({"background-color":""});
             $(this).css({"background-color":"#C40000"});
             if(contentMenu.css("right") !== "270px"){
+                backdropAlt.animate({"right":"0"},"fast");
                 contentMenu.animate({"right":"270px"},"fast");
                 $(this).next(altMenu).animate({"right":"0"},"fast");
             }else{
                 var rightValue = $(this).next(altMenu).css("right");
                 if(rightValue == "-270px"){
-                    altMenu.css({"right":"-270px"});
-                    $(this).next(altMenu).css({"right":"0"});
+                    altMenu.animate({"right":"-270px"},"fast");
+                    $(this).next(altMenu).animate({"right":"0"},"fast");
                 }
                 if(rightValue == "0px"){sideOut();}
             }
@@ -58,7 +60,8 @@ require(['jquery', 'system'], function($, system){
         // 侧边栏归位函数
         function sideOut(){
             contentMenu.animate({"right":"0"},"fast");
-            btnMenu.css({"background-color":""}).next(altMenu).animate({"right":"-270px"},"fast");
+            btnMenu.css({"background-color":""}).next(altMenu).animate({"right":"-270px"},"fast").next(backdropAlt).animate({"right":"-270px"},"fast");
+
         }
     });
 });

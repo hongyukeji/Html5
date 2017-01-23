@@ -656,15 +656,24 @@ ul,ol,li {
 }
 
 .altMenu {
+    z-index: 1;
     position: fixed;
     width: 270px;
     height: 100%;
     top: 0;
     right: -270px;
     bottom: 0;
-    background-color: #FFFFFF;
+    background-color: #F5F5F5;
 }
-
+.backdropAlt{
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    top: 0;
+    right: -270px;
+    bottom: 0;
+    background-color: #F5F5F5;
+}
 
 
 
