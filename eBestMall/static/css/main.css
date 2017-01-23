@@ -33,20 +33,16 @@
  */
 
 /* [移动端调用删除/PC端保留]解决引用Bootstrap造成在IE中position: fixed;定位和滚动条问题*/
-@-ms-viewport {
-    width: auto;
-}
+@-ms-viewport {width: auto;}
+
+* {margin: 0; padding: 0;}
+
+html {min-width: 1280px}
 
 body {
     font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #6C6C6C;
-}
-
-/*所有元素边距默认为零*/
-* {
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -97,6 +93,7 @@ ul,ol,li {
 /*-------------------- Header --------------------*/
 .header {
     position: relative;
+    min-width: 1210px;
 }
 
 /* 顶部广告 */
@@ -416,6 +413,7 @@ ul,ol,li {
 }
 
 /*-------------------- Content --------------------*/
+.content {}
 .contentFocus {
     height: 500px;
 }
@@ -630,7 +628,7 @@ ul,ol,li {
 
 
 /*-------------------- Footer --------------------*/
-
+.footer {}
 
 
 /*-------------------- Icon --------------------*/
