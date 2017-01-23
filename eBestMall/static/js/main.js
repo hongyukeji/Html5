@@ -24,8 +24,14 @@ require(['jquery', 'system'], function($, system){
         var altMenu = $('.altMenu');
 
         //页面被单击事件
-        $(document).click(function(){
-            sideOut();
+        $(document).click(function whichButton(event)
+        {
+            var btnNum = event.button;
+            if (btnNum==2) { console.log("鼠标右键被点击！");}
+            else if(btnNum==0) {
+                /*鼠标左键被点击*/
+                sideOut();
+            } else if (btnNum==1) {console.log("鼠标中键被点击！");} else {console.log("您点击了" + btnNum+ "号键，我不能确定它的名称。");}
         });
         $(contentMenu).click(function(event){
             event.stopPropagation();
@@ -35,27 +41,24 @@ require(['jquery', 'system'], function($, system){
             btnMenu.css({"background-color":""});
             $(this).css({"background-color":"#C40000"});
             if(contentMenu.css("right") !== "270px"){
-                contentMenu.css("right","270px");
-                $(this).next(altMenu).css("right","0");
+                contentMenu.animate({"right":"270px"},"fast");
+                $(this).next(altMenu).animate({"right":"0"},"fast");
             }else{
                 var rightValue = $(this).next(altMenu).css("right");
                 if(rightValue == "-270px"){
-                    altMenu.css("right","-270px");
-                    $(this).next(altMenu).css("right","0");
+                    altMenu.css({"right":"-270px"});
+                    $(this).next(altMenu).css({"right":"0"});
                 }
                 if(rightValue == "0px"){
                     sideOut();
-                    //contentMenu.css("right","0");
-                    //$(this).next(altMenu).css("right","-270px");
-                    //$(this).css("background-color","");
                 }
             }
         });
 
         // 侧边栏归位函数
         function sideOut(){
-            contentMenu.css("right","0");
-            btnMenu.next(altMenu).css("right","-270px");
+            contentMenu.animate({"right":"0"},"fast");
+            btnMenu.next(altMenu).animate({"right":"-270px"},"fast");
             btnMenu.css({"background-color":""});
         }
     });

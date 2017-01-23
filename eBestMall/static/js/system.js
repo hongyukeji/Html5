@@ -5,10 +5,10 @@ define(['jquery'], function ($){
             $(window).on('scroll', function(){
                 if($(window).scrollTop() > $(window).height()){
                     scrollName.fadeIn(); //  scroll-linked 定位 BUG - 待解决 Shadow
-                    //className.css("display","block");
+                    //scrollName.css("display","block");
                 }else{
                     scrollName.fadeOut();    // scroll-linked 定位 BUG - 待解决 Shadow
-                    //className.css("display","none");
+                    //scrollName.css("display","none");
                 }
             });
         },
