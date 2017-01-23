@@ -58,8 +58,7 @@ require(['jquery', 'system'], function($, system){
         // 侧边栏归位函数
         function sideOut(){
             contentMenu.animate({"right":"0"},"fast");
-            btnMenu.next(altMenu).animate({"right":"-270px"},"fast");
-            btnMenu.css({"background-color":""});
+            btnMenu.css({"background-color":""}).next(altMenu).animate({"right":"-270px"},"fast");
         }
     });
 });
