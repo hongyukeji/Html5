@@ -580,7 +580,7 @@ ul,ol,li {
 .sideMain {
     position: absolute;
     width: 100%;
-    top: calc(50% - (245px / 2));
+    top: calc(50% - (274px / 2));
     right: 0;
     margin-bottom: 0;
 }
@@ -603,6 +603,16 @@ ul,ol,li {
     vertical-align: -10%;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.btnMenu > a > img {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    margin: 5px;
+    border-radius: 13px;
+    overflow: hidden;
 }
 .cartMenu{
     height: 127px;
