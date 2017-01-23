@@ -24,7 +24,11 @@
     --font-color: #6C6C6C;
 
     /*背景色*/
-    --bg-color: #F5F5F5;
+    --bg-color-ash: #F5F5F5;
+    --bg-color-red: #C40000;
+
+    /*Border边框色*/
+    --border-color: #EEEEEE;
 
 }
 
