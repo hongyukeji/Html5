@@ -18,12 +18,12 @@ require(['jquery', 'system'], function($, system){
     system.closeAd('.closeAd');
 
     $(function(){
-        //首页侧边工具栏事件
+        //首页侧边工具栏变量
         var btnMenu = $('.btnMenu');
         var contentMenu = $('.fixedRight');
         var altMenu = $('.altMenu');
 
-        //页面被单击事件
+        //页面鼠标点击事件
         $(document).click(function whichButton(event)
         {
             var btnNum = event.button;
@@ -33,6 +33,8 @@ require(['jquery', 'system'], function($, system){
                 sideOut();
             } else if (btnNum==1) {console.log("鼠标中键被点击！");} else {console.log("您点击了" + btnNum+ "号键，我不能确定它的名称。");}
         });
+
+        //阻止侧边栏冒泡事件
         $(contentMenu).click(function(event){
             event.stopPropagation();
         });
