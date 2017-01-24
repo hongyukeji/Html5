@@ -89,10 +89,9 @@ require(['jquery'], function($){
 });
 
 /* require(['jquery','str'], function($,'str'){}); */
-/*
-require(['jquery', 'system'], function ($, system) {
+
+/*require(['jquery', 'system'], function ($, system) {
     console.log(system.systemTime(1, 2));
     console.log(system.systemDate());
-});
-*/
+});*/
 

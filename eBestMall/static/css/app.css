@@ -107,9 +107,8 @@ ul, ol, li {
 .bg-gray {
     background-color: #F5F5F5;
 }
-
-.bg-ash {
-    background-color: #F5F5F5
+.bg-red {
+    background-color: red;
 }
 
 /*-------------------- Header --------------------*/
@@ -462,7 +461,7 @@ ul, ol, li {
 }
 
 #header .headerMain > div {
-    height: 140px;
+    height: 138px;
     position: relative;
 }
 
@@ -507,13 +506,20 @@ ul, ol, li {
     margin-left: 200px;
 }
 
+#header .search-cart-bar {
+    width: 100%;
+    height: 98px;
+}
 #header .searchHeader {
+
 }
 
 #header .cartHeader {
 }
 
-#header .navHeader {
+#header .header-nav-bar {
+    width: 100%;
+    height: 40px;
 }
 
 /*-------------------- Content --------------------*/
