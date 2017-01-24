@@ -113,13 +113,13 @@ ul, ol, li {
 }
 
 /*-------------------- Header --------------------*/
-.header {
+#header {
     position: relative;
     min-width: 1210px;
 }
 
 /* 顶部广告 */
-.headerAd {
+#header .headerAd {
     width: 100%;
     height: 80px;
     z-index: 1;
@@ -128,12 +128,12 @@ ul, ol, li {
     background-color: #E63F37;
 }
 
-.headerAd > div {
+#header .headerAd > div {
     position: relative;
     height: 100%;
 }
 
-.headerAd > div > a > img {
+#header .headerAd .header-ad-bar img {
     width: 100%;
     height: 100%;
     float: left;
@@ -173,7 +173,7 @@ ul, ol, li {
 }
 
 /* 页眉 */
-.headerTop {
+#header .headerTop {
     width: 100%;
     min-width: 1210px;
     height: 32px;
@@ -181,51 +181,51 @@ ul, ol, li {
     border-bottom: 1px solid #EEEEEE;
 }
 
-.headerTop > div {
+#header .headerTop > div {
     height: 32px;
 }
 
-.headerTop a {
+#header .headerTop a {
     color: #6C6C6C;
 }
 
-.headerTop a:hover {
+#header .headerTop a:hover {
     color: #F10215;
 }
 
-.headerTop > div > ul {
+#header .headerTop > div > ul {
     height: 100%;
     position: relative;
     margin-bottom: 0;
 }
 
-.headerTop > div > ul > li {
+#header .headerTop > div > ul > li {
     height: 100%;
     line-height: 32px;
 }
 
-.headerTop > div > ul > li > span {
+#header .headerTop > div > ul > li > span {
     color: #6C6C6C;
 }
 
 /* 页眉右侧菜单 */
-.menuTop {
+#header .menuTop {
 }
 
-.menuTop .active {
+#header .menuTop .active {
     color: #F10215;
 }
 
-.menuTop > li {
+#header .menuTop > li {
     float: left;
 }
 
-.menuTop > li > div {
+#header .menuTop > li > div {
     padding-left: 7px;
     padding-right: 7px;
 }
 
-.menuTop .spacer {
+#header .menuTop .spacer {
     overflow: hidden;
     margin: 12px 5px 0;
     width: 1px;
@@ -233,19 +233,19 @@ ul, ol, li {
     background-color: #CCCCCC;
 }
 
-.downTop {
+#header .downTop {
     height: 32px;
     border: 1px solid #F5F5F5;
     border-bottom: none;
     position: relative;
 }
 
-.downTop:hover {
+#header .downTop:hover {
     border-color: #EEEEEE;
     background-color: #FFFFFF;
 }
 
-.downTop .effectTop {
+#header .downTop .effectTop {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -253,7 +253,7 @@ ul, ol, li {
     transition: all 0.2s ease-in-out;
 }
 
-.downTop:hover .effectTop {
+#header .downTop:hover .effectTop {
     -ms-transform: rotate(-180deg); /* IE 9 */
     -moz-transform: rotate(-180deg); /* Firefox */
     -webkit-transform: rotate(-180deg); /* Safari 和 Chrome */
@@ -261,21 +261,21 @@ ul, ol, li {
     transform: rotate(-180deg);
 }
 
-.downTop i {
+#header .downTop i {
     /*vertical-align: -3%;*/
     color: #6C6C6C;
     margin-left: 3px;
 }
 
-.downTop span {
+#header .downTop span {
     color: #6C6C6C;
 }
 
-.downTop:hover .listTop {
+#header .downTop:hover .listTop {
     display: block;
 }
 
-.listTop {
+#header .listTop {
     min-width: 63px;
     position: absolute;
     top: 31px;
@@ -288,31 +288,31 @@ ul, ol, li {
     border-top: none;
 }
 
-.listTop > div {
+#header .listTop > div {
     height: 24px;
     line-height: 24px;
 }
 
-.listTop > div:hover {
+#header .listTop > div:hover {
     background-color: #F5F5F5;
 }
 
-.listTop > div > a {
+#header .listTop > div > a {
     white-space: nowrap;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.listTop > div > a:hover {
+#header .listTop > div > a:hover {
     color: #6C6C6C;
 }
 
-.cartTop {
+#header .cartTop {
     min-width: 312px;
     min-height: 58px;
 }
 
-.siteTop {
+#header .siteTop {
     position: absolute;
     top: 31px;
     z-index: 1;
@@ -330,30 +330,30 @@ ul, ol, li {
     -webkit-box-sizing: border-box;
 }
 
-.downTop:hover .siteTop {
+#header .downTop:hover .siteTop {
     display: block;
 }
 
-.siteTop > div {
+#header .siteTop > div {
     height: 24px;
     line-height: 24px;
 }
 
-.siteTop > div:hover {
+#header .siteTop > div:hover {
     background-color: #F5F5F5;
 }
 
-.siteTop > div > a {
+#header .siteTop > div > a {
     white-space: nowrap;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.siteTop > div > a:hover {
+#header .siteTop > div > a:hover {
     color: #6C6C6C;
 }
 
-.siteTop > dl {
+#header .siteTop > dl {
     width: 256px;
     min-height: 128px;
     float: left;
@@ -363,22 +363,22 @@ ul, ol, li {
     border-left: 1px solid #EEEEEE;
 }
 
-.siteTop > dl:first-child {
+#header .siteTop > dl:first-child {
     border-color: #FFFFFF;
 }
 
-.siteTop > dl > dt {
+#header .siteTop > dl > dt {
     font-size: 12px;
     font-weight: 700;
     color: #6C6C6C;
     margin-bottom: 10px;
 }
 
-.siteTop > dl > dd {
+#header .siteTop > dl > dd {
     margin-left: 0;
 }
 
-.siteTop > dl > dd > div {
+#header .siteTop > dl > dd > div {
     width: 7em;
     margin-right: calc((256px / 3) - 7em);
     height: 24px;
@@ -389,7 +389,7 @@ ul, ol, li {
 }
 
 /* 地址定位 */
-.headerRegion {
+#header .headerRegion {
     /*box-sizing:border-box;*/
     /*-moz-box-sizing:border-box; *//* Firefox */
     /*-webkit-box-sizing:border-box; *//* Safari */
@@ -402,23 +402,23 @@ ul, ol, li {
     height: 32px;
 }
 
-.headerRegion:hover {
+#header .headerRegion:hover {
     border-color: #EEEEEE;
     background-color: #FFFFFF;
 }
 
-.headerRegion:hover .listRegion {
+#header .headerRegion:hover .listRegion {
     display: block;
 }
 
-.headerRegion > i {
+#header .headerRegion > i {
     vertical-align: -10%;
     font-size: 14px;
     color: #F10215;
     margin-right: 3px;
 }
 
-.listRegion {
+#header .listRegion {
     position: absolute;
     top: -4px;
     left: -1px;
@@ -433,7 +433,7 @@ ul, ol, li {
     background-color: #FFFFFF;
 }
 
-.listRegion > div {
+#header .listRegion > div {
     float: left;
     width: 60px;
     height: 28px;
@@ -442,32 +442,32 @@ ul, ol, li {
     padding: 2px 0;
 }
 
-.listRegion > div > a {
+#header .listRegion > div > a {
     padding: 4px 8px;
     color: #6C6C6C;
 }
 
-.listRegion > div > a:hover {
+#header .listRegion > div > a:hover {
     color: #F10215;
     background-color: #F5F5F5;
 }
 
-.listRegion > div > .active {
+#header .listRegion > div > .active {
     background-color: #F10215 !important;
     color: #FFFFFF !important;
 }
 
-.headerMain {
+#header .headerMain {
     width: 100%;
 }
 
-.headerMain > div {
+#header .headerMain > div {
     height: 140px;
     position: relative;
 }
 
 /* Logo */
-.headerMain .logo {
+#header .headerMain .logo {
     position: absolute;
     top: -33px;
     left: 0;
@@ -478,7 +478,7 @@ ul, ol, li {
     box-shadow: 0 -12px 10px rgba(0, 0, 0, .2);
 }
 
-.headerMain .logo > h1 {
+#header .headerMain .logo > h1 {
     position: absolute;
     margin-top: 0;
     margin-bottom: 0;
@@ -486,7 +486,7 @@ ul, ol, li {
     height: 100%;
 }
 
-.headerMain .logo > h1 > a {
+#header .headerMain .logo > h1 > a {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -494,26 +494,26 @@ ul, ol, li {
     text-indent: -999px;
 }
 
-.headerMain .logo > h1 > a > img {
+#header .headerMain .logo > h1 > a > img {
     width: 100%;
     height: 100%;
     float: left;
 }
 
-.headerRight {
+#header .header-main-right {
     position: relative;
     width: 1010px;
     height: 100%;
     margin-left: 200px;
 }
 
-.searchHeader {
+#header .searchHeader {
 }
 
-.cartHeader {
+#header .cartHeader {
 }
 
-.navHeader {
+#header .navHeader {
 }
 
 /*-------------------- Content --------------------*/
@@ -528,7 +528,43 @@ ul, ol, li {
     height: 582px;
 }
 
-/*-------------------- 侧边栏CSS样式 --------------------*/
+/*-------------------- 搜索条 --------------------*/
+#searchBar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: none;
+    border-bottom: 2px solid red;
+    background-color: #FFFFFF;
+}
+
+/*-------------------- 底部广告 --------------------*/
+#footerAd {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+#footerAd > div {
+    position: relative;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+#footerAd  .footer-ad-bar > img {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+/*-------------------- 侧边栏 --------------------*/
 body {
     height: 3999px;
 }
@@ -546,7 +582,7 @@ body {
     display: table;
 }
 
-#sideBar > .sideBarBody {
+#sideBar .sideBarBody {
     position: absolute;
     width: 270px;
     height: 100%;
@@ -571,7 +607,7 @@ body {
     margin: 3px auto;
 }
 
-#sideBar > .item a {
+#sideBar .item a {
     width: 100%;
     float: left;
     color: #FFFFFF;
@@ -626,11 +662,11 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-#sideBar > .item .item-title a {
+#sideBar .item .item-title a {
     /*max-width: 7em;*/
 }
 
-#sideBar > .item .item-title span {
+#sideBar .item .item-title span {
     width: 16px;
     height: 16px;
     line-height: 16px;
@@ -642,7 +678,7 @@ body {
     color: #494949;
 }
 
-#sideBar > .item .item-cart {
+#sideBar .item .item-cart {
     white-space: pre-wrap;
 }
 
@@ -695,25 +731,17 @@ body {
     display: table-cell;
     text-align: center;
 }
+#returnTop {
+    display: none;
+}
 
 /*-------------------- Footer --------------------*/
 .footer {}
 
 /*-------------------- Icon --------------------*/
 
+
 /*-------------------- Fixed --------------------*/
-.fixedTop {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    display: none;
-    border-bottom: 2px solid red;
-    background-color: #FFFFFF;
-}
 
 .fixedBottom {
     width: 100%;
@@ -723,7 +751,6 @@ body {
     z-index: 2;
     display: block;
 }
-
 .fixedBottom > div {
     background-color: #F5F5F5;
     height: 80px;
