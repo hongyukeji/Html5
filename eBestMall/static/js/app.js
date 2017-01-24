@@ -5,9 +5,6 @@ require.config({
     }
 });
 
-/*
- * require(['jquery','str'], function($,'str'){});
- */
 require(['jquery'], function($){
     $(function(){
         /* 页面鼠标点击事件 */
@@ -92,4 +89,11 @@ require(['jquery'], function($){
     });
 });
 
+/* require(['jquery','str'], function($,'str'){}); */
+/*
+require(['jquery', 'system'], function ($, system) {
+    console.log(system.systemTime(1, 2));
+    console.log(system.systemDate());
+});
+*/
 
