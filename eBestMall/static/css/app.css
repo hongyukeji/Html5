@@ -506,20 +506,60 @@ ul, ol, li {
     margin-left: 200px;
 }
 
-#header .search-cart-bar {
+#header .header-search-cart-bar {
     width: 100%;
     height: 98px;
 }
-#header .searchHeader {
+#header .header-search-bar {
 
 }
 
-#header .cartHeader {
+#header .header-cart-bar {
 }
 
 #header .header-nav-bar {
-    width: 100%;
+    width: 810px;
     height: 40px;
+    overflow: hidden;
+}
+#header .header-nav-bar .item {
+    margin-left: 30px;
+    float: left;
+}
+#header .header-nav-bar .item a {
+    height: 40px;
+    font: 700 16px/40px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b体,sans-serif;
+    color: #555555;
+}
+#header .header-nav-bar .item a:hover {
+    color: #C81623;
+}
+#header .header-nav-bar .spacer {
+    width: 1px;
+    height: 10px;
+    float: left;
+    margin-left: 20px;
+    margin-right: -10px;
+    margin-top: 15px;
+    overflow: hidden;
+    background-color: #CCCCCC;
+}
+#header .header-activity-bar {
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+#header .header-activity-bar > a {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#header .header-activity-bar > a img {
+    width: 100%;
+    height: 100%;
+    float: left;
 }
 
 /*-------------------- Content --------------------*/
@@ -637,17 +677,17 @@ body {
     overflow: hidden;
 }
 
-.item:hover {
+#sideBar .item:hover {
     background-color: #C40000;
 }
 
-.item:hover .item-title {
+#sideBar .item:hover .item-title {
     visibility: visible;
     opacity: 1;
     right: 35px;
 }
 
-.item .item-title {
+#sideBar .item .item-title {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -688,7 +728,7 @@ body {
     white-space: pre-wrap;
 }
 
-.item-cartBar {
+#sideBar .item-cartBar {
     padding: 6px 0;
     border-top: 1px solid #444444;
     border-bottom: 1px solid #444444;
