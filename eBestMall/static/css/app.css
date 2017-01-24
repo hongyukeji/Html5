@@ -546,7 +546,7 @@ body {
     display: table;
 }
 
-#sideBar .sideBarBody {
+#sideBar > .sideBarBody {
     position: absolute;
     width: 270px;
     height: 100%;
@@ -626,11 +626,11 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-#sideBar .item .item-title a {
+#sideBar > .item .item-title a {
     /*max-width: 7em;*/
 }
 
-#sideBar .item .item-title span {
+#sideBar > .item .item-title span {
     width: 16px;
     height: 16px;
     line-height: 16px;
@@ -642,7 +642,7 @@ body {
     color: #494949;
 }
 
-#sideBar .item .item-cart {
+#sideBar > .item .item-cart {
     white-space: pre-wrap;
 }
 
