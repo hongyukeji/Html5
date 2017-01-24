@@ -427,7 +427,7 @@ ul, ol, li {
 }
 
 #header .headerRegion > i {
-    vertical-align: -10%;
+    vertical-align: -1px;
     font-size: 14px;
     color: #F10215;
     margin-right: 3px;
@@ -526,26 +526,31 @@ ul, ol, li {
     width: 100%;
     height: 98px;
 }
+
 #header .header-search-bar {
     width: 680px;
     height: 100%;
     float: left;
 }
+
 #header .header-search {
     width: 550px;
     height: 35px;
     margin-top: 25px;
     margin-left: 130px;
 }
+
 #header .header-search .header-search-form > input[type="text"] {
     width: 486px;
     height: 31px;
-    line-height: 31px;padding: 0 5px;
+    line-height: 31px;
+    padding: 0 5px;
     font-size: 14px;
     color: rgb(51, 51, 51);
     float: left;
     border: 2px solid #F10215;;
 }
+
 #header .header-search .header-search-form > button {
     width: 50px;
     height: 35px;
@@ -557,9 +562,11 @@ ul, ol, li {
     border: none;
     background-color: #F10215;
 }
-#header .header-search .header-search-form > button > i{
+
+#header .header-search .header-search-form > button > i {
     vertical-align: -3px;
 }
+
 #header .header-hot-words {
     width: 500px;
     height: 20px;
@@ -567,14 +574,17 @@ ul, ol, li {
     margin-left: 130px;
     overflow: hidden;
 }
-#header .header-hot-words .item{
+
+#header .header-hot-words .item {
     float: left;
     line-height: 20px;
     margin-right: 10px;
 }
+
 #header .header-hot-words .item a:hover {
     color: #C81623;
 }
+
 #header .header-hot-words .item .active {
     color: #F10215;
 }
@@ -584,6 +594,7 @@ ul, ol, li {
     height: 100%;
     float: left;
 }
+
 #header .header-cart {
     width: 190px;
     height: 34px;
@@ -592,13 +603,52 @@ ul, ol, li {
     border: 1px solid #E3E4E5;
     background-color: #FFFFFF;
 }
+
 #header .header-cart:hover {
     border-color: #CCCCCC;
     border-bottom: none;
 }
-#header .header-cart:hover .header-cart-body{
+
+#header .header-cart:hover .header-cart-body {
     display: block;
 }
+
+#header .header-cart .header-cart-btn {
+    width: 190px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#header .header-cart .header-cart-btn > i {
+    font-size: 16px;
+    color: #F10214;
+    vertical-align: -1px;
+}
+
+#header .header-cart .header-cart-btn > a {
+    color: #F10214;
+}
+
+#header .header-cart .header-cart-btn > span {
+    position: absolute;
+    top: 5px;
+    left: 140px;
+    right: auto;
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    padding: 1px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    background-color: #f10215;
+    border-radius: 7px;
+    min-width: 12px;
+    text-align: center
+}
+
 #header .header-cart-body {
     width: 300px;
     height: 80px;
@@ -610,6 +660,7 @@ ul, ol, li {
     z-index: 1;
     display: none;
 }
+
 #header .header-cart-body .spacer {
     width: 190px;
     height: 1px;
@@ -623,18 +674,22 @@ ul, ol, li {
     height: 40px;
     overflow: hidden;
 }
+
 #header .header-nav-bar .item {
     margin-left: 30px;
     float: left;
 }
+
 #header .header-nav-bar .item a {
     height: 40px;
-    font: 700 16px/40px Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b体,sans-serif;
+    font: 700 16px/40px Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b体, sans-serif;
     color: #555555;
 }
+
 #header .header-nav-bar .item a:hover {
     color: #C81623;
 }
+
 #header .header-nav-bar .spacer {
     width: 1px;
     height: 10px;
@@ -645,6 +700,7 @@ ul, ol, li {
     overflow: hidden;
     background-color: #CCCCCC;
 }
+
 #header .header-activity-bar {
     width: 190px;
     height: 40px;
@@ -652,11 +708,13 @@ ul, ol, li {
     right: 0;
     bottom: 10px;
 }
+
 #header .header-activity-bar > a {
     width: 100%;
     height: 100%;
     float: left;
 }
+
 #header .header-activity-bar > a img {
     width: 100%;
     height: 100%;
@@ -699,13 +757,14 @@ ul, ol, li {
     z-index: 2;
     display: none;
 }
+
 #footerAd > div {
     position: relative;
     height: 100%;
     background-color: #F5F5F5;
 }
 
-#footerAd  .footer-ad-bar > img {
+#footerAd .footer-ad-bar > img {
     width: 100%;
     height: 100%;
     float: left;
@@ -878,15 +937,16 @@ body {
     display: table-cell;
     text-align: center;
 }
+
 #returnTop {
     display: none;
 }
 
 /*-------------------- Footer --------------------*/
-.footer {}
+.footer {
+}
 
 /*-------------------- Icon --------------------*/
-
 
 /*-------------------- Fixed --------------------*/
 
@@ -898,6 +958,7 @@ body {
     z-index: 2;
     display: block;
 }
+
 .fixedBottom > div {
     background-color: #F5F5F5;
     height: 80px;
