@@ -107,22 +107,28 @@ ul, ol, li {
 .bg-gray {
     background-color: #F5F5F5;
 }
+
 .bg-red {
     background-color: red;
 }
+
 .bg-info {
     background-color: #d9edf7;
 }
+
 .bg-primary {
     color: #fff;
     background-color: #337ab7;
 }
+
 .bg-warning {
     background-color: #fcf8e3;
 }
+
 .bg-danger {
     background-color: #f2dede;
 }
+
 .bg-success {
     background-color: #dff0d8;
 }
@@ -233,6 +239,9 @@ ul, ol, li {
 
 #header .menuTop > li {
     float: left;
+    height: 32px;
+    border: 1px solid #F5F5F5;
+    line-height: 32px;
 }
 
 #header .menuTop > li > div {
@@ -248,6 +257,11 @@ ul, ol, li {
     background-color: #CCCCCC;
 }
 
+/* Top顶部购物车 */
+#header .header-top-cart {
+    display: none;
+}
+
 #header .downTop {
     height: 32px;
     border: 1px solid #F5F5F5;
@@ -261,6 +275,7 @@ ul, ol, li {
 }
 
 #header .downTop .effectTop {
+    float: left;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -276,13 +291,18 @@ ul, ol, li {
     transform: rotate(-180deg);
 }
 
+#header .downTop a {
+    float: left;
+    margin-right: 3px;
+}
+
 #header .downTop i {
     /*vertical-align: -3%;*/
     color: #6C6C6C;
-    margin-left: 3px;
 }
 
 #header .downTop span {
+    margin-left: 5px;
     color: #6C6C6C;
 }
 
