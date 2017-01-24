@@ -110,6 +110,22 @@ ul, ol, li {
 .bg-red {
     background-color: red;
 }
+.bg-info {
+    background-color: #d9edf7;
+}
+.bg-primary {
+    color: #fff;
+    background-color: #337ab7;
+}
+.bg-warning {
+    background-color: #fcf8e3;
+}
+.bg-danger {
+    background-color: #f2dede;
+}
+.bg-success {
+    background-color: #dff0d8;
+}
 
 /*-------------------- Header --------------------*/
 #header {
@@ -511,10 +527,30 @@ ul, ol, li {
     height: 98px;
 }
 #header .header-search-bar {
-
+    width: 680px;
+    height: 100%;
+    float: left;
 }
-
+#header .header-search {
+    width: 550px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 130px;
+}
+#header .header-hot-words {
+    width: 550px;
+    height: 20px;
+    margin-left: 130px;
+}
 #header .header-cart-bar {
+    width: 330px;
+    height: 100%;
+    float: left;
+}
+#header .header-cart {
+    width: 190px;
+    height: 35px;
+    margin: 25px auto 0 auto;
 }
 
 #header .header-nav-bar {
