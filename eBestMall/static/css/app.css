@@ -131,8 +131,9 @@ ul, ol, li {
 
 /*-------------------- Header --------------------*/
 #header {
+    width: 100%;
+    float: left;
     position: relative;
-    min-width: 1210px;
 }
 
 /* 顶部广告 */
@@ -738,17 +739,65 @@ ul, ol, li {
 }
 
 /*-------------------- Content --------------------*/
-.content {
+#content {
+    width: 100%;
+    float: left;
+    position: relative;
 }
 
-.contentFocus {
+#content .content-body {
+    width: 1210px;
+    margin: 0 auto;
+}
+#content .content-body .mb-big {
+    margin-bottom: 30px;
+}
+#content .content-body .mb-small {
+    margin-bottom: 10px;
+}
+#content .content-body .content-focus {
+    width: 100%;
+    height: 480px;
+    float: left;
+}
+#content .content-body .content-focus > div {
+    float: left;
+}
+#content .content-body .content-focus-left {
+    width: 190px;
+    height: 100%;
+}
+#content .content-body .content-focus-middle {
+    width: 810px;
+    height: 100%;
+    margin: 0 10px;
+}
+#content .content-body .content-focus-right {
+    width: 190px;
+    height: 100%;
+}
+#content .content-body .content-sec-kill {
+    width: 100%;
+    height: 305px;
+    float: left;
+}
+#content .content-body .content-coupons {
+    width: 100%;
+    height: 215px;
+    float: left;
+}
+
+#content .content-body .content-storey {
+    width: 100%;
+    height: 523px;
+    float: left;
+}
+#content .footer {
+    width: 100%;
     height: 500px;
+    clear: both;
+    background-color: #EAEAEA;
 }
-
-.contentArea {
-    height: 582px;
-}
-
 /*-------------------- 搜索条 --------------------*/
 #searchBar {
     width: 100%;
@@ -787,10 +836,6 @@ ul, ol, li {
 }
 
 /*-------------------- 侧边栏 --------------------*/
-body {
-    height: 3999px;
-}
-
 #sideBar {
     width: 35px;
     height: 100%;
@@ -959,8 +1004,6 @@ body {
 }
 
 /*-------------------- Footer --------------------*/
-.footer {
-}
 
 /*-------------------- Icon --------------------*/
 

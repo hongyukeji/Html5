@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="static/css/app.css"/>
 </head>
 <body>
-<!-- 公共头部 -->
+<!-- 公共页眉 -->
 <div id="header">
-    <!-- 公共头部-顶部广告 -->
+    <!-- 公共页眉-顶部广告 -->
     <div class="headerAd">
         <div class="w">
             <a class="header-ad-bar" href="javascript:;"><img src="static/img/ad/headerAd.jpg" /> </a>
@@ -20,7 +20,7 @@
         </div>
     </div>
 
-    <!-- 公共头部-顶部导航 -->
+    <!-- 公共页眉-顶部导航 -->
     <div class="headerTop">
         <div class="w">
             <ul class="fl">
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <!-- 公共头部-主要内容 -->
+    <!-- 公共页眉-主要内容 -->
     <div class="headerMain">
         <div class="w">
             <div class="logo">
@@ -164,7 +164,7 @@
                     <!--<a href="javascript:;">eBestMall<img src="https://img13.360buyimg.com/da/jfs/t3904/208/1495717082/85522/658af7d7/587dc8eaN0e297af5.gif" alt="eBestMall" /> </a>-->
                 </h1>
             </div>
-            <!-- 公共头部-搜索框-购物车-导航 -->
+            <!-- 公共页眉-搜索框-购物车-导航 -->
             <div class="header-main-right">
                 <div class="header-search-cart-bar">
                     <div class="header-search-bar fl">
@@ -243,16 +243,33 @@
     </div>
 </div>
 
-<!-- Content内容 -->
-<div class="content bar">
-    <!-- 首页-焦点区-->
-    <div class="contentFocus bar"></div>
-    <!-- 首页-专区-->
-    <div class="contentArea bar"></div>
-    <div class="contentArea bar"></div>
-    <div class="contentArea bar"></div>
-    <div class="contentArea bar"></div>
+<!-- Content -->
+<div id="content">
+    <!-- Content-内容 -->
+    <div class="content-body">
+        <!-- Content-焦点区-->
+        <div class="content-focus mb-small bg-gray">
+            <div class="content-focus-left bg-danger"></div>
+            <div class="content-focus-middle bg-success"></div>
+            <div class="content-focus-right bg-info"></div>
+        </div>
+
+        <!-- Content-秒杀-->
+        <div class="content-sec-kill mb-big bg-warning"></div>
+
+        <!--Content-领券-->
+        <div class="content-coupons mb-big bg-info"></div>
+
+        <!--Content-楼层-->
+        <div class="content-storey mb-big bg-primary"></div>
+    </div>
+
+    <!-- 首页-页脚 -->
+    <div class="footer bg-info"></div>
 </div>
+
+<!-- 公共-页脚 -->
+<div id="footer"></div>
 
 <!-- 搜索条 -->
 <div id="searchBar"></div>
@@ -314,9 +331,6 @@
         <a class="closeAd" href="javascript:;"><span class="icon-close"></span></a>
     </div>
 </div>
-
-<!-- 公共-页脚 -->
-<div class="footer"></div>
 
 <!--<script type="text/javascript" src="static/js/jquery-2.2.3.min.js"></script>-->
 <!--<script type="text/javascript"></script>-->
