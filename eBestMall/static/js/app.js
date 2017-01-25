@@ -88,6 +88,27 @@ require(['jquery'], function($){
     });
 });
 
+/* 首页滑块 */
+require(['jquery', 'plug-in/slider'], function($,slider){
+    $(function() {
+        var bannerSlider = new slider.Slider($('#sliderBar'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#sliderIndicator'),
+            activeControllerCls: 'active'
+        });
+        $('#sliderBar .slider-prev').click(function() {
+            bannerSlider.prev()
+        });
+        $('#sliderBar .slider-next').click(function() {
+            bannerSlider.next()
+        });
+    });
+});
+
 /* require(['jquery','str'], function($,'str'){}); */
 
 /*require(['jquery', 'system'], function ($, system) {
