@@ -39,7 +39,6 @@
 html, body {
     font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
     color: #6C6C6C;
-    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -298,9 +297,13 @@ ul, ol, li {
     color: #6C6C6C;
 }
 
-#header .downTop span {
+#header .downTop .down-top-span-cart-number {
     margin-left: 5px;
-    color: #6C6C6C;
+    color: #F10215;
+}
+#header .downTop .down-top-span-a {
+    float: left;
+    margin-right: 3px;
 }
 
 #header .downTop:hover .listTop {
@@ -357,9 +360,6 @@ ul, ol, li {
     min-height: 168px;
     right: -1px;
     background-color: #FFFFFF;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
 }
 
 #header .downTop:hover .siteTop {
@@ -456,7 +456,7 @@ ul, ol, li {
     left: -1px;
     margin-top: 35px;
     padding: 7px;
-    width: 316px;
+    width: 300px;
     height: auto;
     z-index: 2;
     display: none;
@@ -760,34 +760,45 @@ ul, ol, li {
     height: 480px;
     float: left;
 }
-#content .content-body .content-focus > div {
+#content .content-focus > div {
     float: left;
 }
-#content .content-body .content-focus-left {
+#content .content-focus-left {
     width: 190px;
     height: 100%;
 }
-#content .content-body .content-focus-middle {
+#content .content-focus-middle {
     width: 810px;
     height: 100%;
     margin: 0 10px;
 }
-#content .content-body .content-focus-right {
+#content .content-focus-middle-slider {
+    width: 100%;
+    height: 340px;
+    float: left;
+}
+#content .content-focus-middle-slider-extend {
+    width: 100%;
+    height: 130px;
+    float: left;
+}
+
+#content .content-focus-right {
     width: 190px;
     height: 100%;
 }
-#content .content-body .content-sec-kill {
+#content .content-sec-kill {
     width: 100%;
     height: 305px;
     float: left;
 }
-#content .content-body .content-coupons {
+#content .content-coupons {
     width: 100%;
     height: 215px;
     float: left;
 }
 
-#content .content-body .content-storey {
+#content .content-storey {
     width: 100%;
     height: 523px;
     float: left;
