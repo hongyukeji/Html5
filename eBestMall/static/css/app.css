@@ -748,6 +748,7 @@ ul, ol, li {
 #content .content-body {
     width: 1210px;
     margin: 0 auto;
+    position: relative;
 }
 #content .content-body .mb-big {
     margin-bottom: 30px;
@@ -766,6 +767,39 @@ ul, ol, li {
 #content .content-focus-left {
     width: 190px;
     height: 100%;
+}
+#content .content-focus-left-classify {
+    width: 100%;
+    height: 100%;
+    /*background-color: red;*/
+}
+#content .content-focus-left-classify ul {
+    overflow: hidden;
+    padding: 15px 0;
+    height: 450px;
+    color: #FFFFFF;
+    background-color: #6e6568;
+}
+#content .content-focus-left-classify ul .item {
+    overflow: hidden;
+    padding-left: 12px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+}
+#content .content-focus-left-classify .item:hover {
+    background-color: #999395;
+}
+#content .content-focus-left-classify ul .item a {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+#content .content-focus-left-classify .item-line{
+    padding: 0 4px;
+    font-size: 12px;
+}
+#content .content-focus-left-classify ul .item a:hover {
+    color: #C81623;
 }
 #content .content-focus-middle {
     width: 810px;
