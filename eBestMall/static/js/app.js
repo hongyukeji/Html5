@@ -110,7 +110,6 @@ require(['jquery', 'plug-in/slider'], function($,slider){
 });
 
 /* require(['jquery','str'], function($,'str'){}); */
-
 /*require(['jquery', 'system'], function ($, system) {
     console.log(system.systemTime(1, 2));
     console.log(system.systemDate());
