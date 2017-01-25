@@ -824,7 +824,7 @@ ul, ol, li {
     height: 100%;
     position: relative;
     overflow: hidden;
-    /*zoom: 1;*/
+    zoom: 1;
 }
 #sliderBar .slides {}
 #sliderBar .slides li {
