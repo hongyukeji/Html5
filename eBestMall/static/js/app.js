@@ -1,7 +1,8 @@
 require.config({
-    baseUrl: 'static/js', /* 默认加载路径 */
+    //baseUrl: 'static/js', /* 默认加载路径 */
     paths: {
-        jquery: 'jquery-2.2.3.min'
+        jquery: 'lib/jquery-2.2.3.min',
+        vue: 'lib/vue'
     }
 });
 
@@ -109,9 +110,20 @@ require(['jquery', 'plug-in/slider'], function($,slider){
     });
 });
 
-/* require(['jquery','str'], function($,'str'){}); */
-/*require(['jquery', 'system'], function ($, system) {
-    console.log(system.systemTime(1, 2));
-    console.log(system.systemDate());
-});*/
-
+require(['vue'], function(Vue){
+    var vm = new Vue({
+        el:"#searchBar",
+        data:{
+            title:"Hello Vue"
+        },
+        mounted: function () {
+            console.log('a is: ' + this.title);
+            this.edit();
+        },
+        methods:{
+            edit: function(){
+                this.title = "hello";
+            }
+        }
+    });
+});
