@@ -117,12 +117,12 @@ require(['vue'], function(Vue){
             title:"Hello Vue"
         },
         mounted: function () {
-            console.log('a is: ' + this.title);
+            console.log('Title is: ' + this.title);
             this.edit();
         },
         methods:{
             edit: function(){
-                this.title = "hello";
+                this.title = "Hello eBestMall";
             }
         }
     });
