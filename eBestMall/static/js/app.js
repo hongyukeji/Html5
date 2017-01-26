@@ -6,6 +6,8 @@ require.config({
     }
 });
 
+require(['jquery'], function($){});
+
 require(['jquery'], function($){
     $(function(){
         /* 页面鼠标点击事件 */
