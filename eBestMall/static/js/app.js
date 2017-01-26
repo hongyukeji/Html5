@@ -92,7 +92,7 @@ require(['jquery'], function($){
 });
 
 /* 首页滑块 */
-require(['jquery', 'plug-in/slider'], function($,slider){
+require(['jquery', 'components/slider'], function($,slider){
     $(function() {
         var bannerSlider = new slider.Slider($('#sliderBar'), {
             time: 5000,
