@@ -938,7 +938,7 @@ ul, ol, li {
 
 #content .content-focus-right .content-focus-right-user {
     width: 170px;
-    height: 101px;
+    height: 99px;
     float: left;
     padding: 15px 10px 0 10px;
 }
@@ -1009,10 +1009,10 @@ ul, ol, li {
 
 #content .content-focus-right .content-focus-right-middle {
     width: 100%;
-    height: 154px;
+    height: 156px;
     float: left;
 }
-#content .content-focus-right .content-focus-right-bottom {
+#content .content-focus-right .content-focus-right-service {
     width: 100%;
     height: 210px;
     float: left;
