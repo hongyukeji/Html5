@@ -64,7 +64,7 @@ require(['jquery'], function($){
         }
 
         /* 关闭首页顶部广告 */
-        $('.closeAd').on('click', function(){
+        $('.close-event').on('click', function(){
             $(this).parent().parent().fadeOut(588);
             /* $(this).parent().next().find().addClass("hidden").removeClass("hidden");  // @父辈 parent() @同辈 next()  @儿子 find() */
         });
