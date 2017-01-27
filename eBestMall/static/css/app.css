@@ -654,8 +654,6 @@ ul, ol, li {
     left: 140px;
     right: auto;
     display: inline-block;
-    *zoom: 1;
-    *display: inline;
     padding: 1px;
     font-size: 12px;
     line-height: 12px;
@@ -849,7 +847,6 @@ ul, ol, li {
     height: 100%;
     position: relative;
     overflow: hidden;
-    zoom: 1;
 }
 #sliderBar .slides {}
 #sliderBar .slides li {
@@ -880,8 +877,6 @@ ul, ol, li {
 #sliderBar .slider-control-nav li {
     margin: 0 2px;
     display: inline-block;
-    /*zoom: 1;*/
-    *display: inline;
 }
 
 .slider-control-btn li a {
@@ -908,7 +903,6 @@ ul, ol, li {
     top: 50%;
     cursor: pointer;
     opacity: 0;
-    filter: alpha(opacity=0);
     -webkit-transition: all .3s ease;
     font-size: 20px;
 }
@@ -925,12 +919,10 @@ ul, ol, li {
 
 #sliderBar:hover .slider-next {
     opacity: 0.8;
-    filter: alpha(opacity=25);
 }
 
 #sliderBar:hover .slider-prev {
     opacity: 0.8;
-    filter: alpha(opacity=25);
 }
 
 .slider-control-btn li a.slider-active,.slider-control-btn li.active a {
